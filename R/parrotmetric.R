@@ -23,6 +23,8 @@
 #' # See .... for ways of using it
 #' @seealso See \code{\link{median}} for something totally different
 parametric_equation <- function(x, y, t0, t1) {
+  assert_function(x)
+  assert_function(y)
   ret <- list(x = x,
               y = y,
               t0 = t0,
@@ -36,4 +38,11 @@ parametric_run <- function(object, ..., n = 1000) {
   theta <- seq(object$t0, object$t1, length.out = n)
   list(x = object$x(theta, ...),
        y = object$y(theta, ...))
+}
+
+
+assert_function <- function(x, name = deparse(substitute(x))) {
+  if (!is.function(x)) {
+    stop(sprintf("Expected '%s' to be a function", name))
+  }
 }

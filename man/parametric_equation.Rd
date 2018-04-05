@@ -2,14 +2,11 @@
 % Please edit documentation in R/parrotmetric.R
 \name{parametric_equation}
 \alias{parametric_equation}
-\alias{parametric_equation2}
 \title{This is a title
 
 Construct a parametric equation object}
 \usage{
 parametric_equation(x, y, t0, t1)
-
-parametric_equation2(x, y, a, b)
 }
 \arguments{
 \item{x}{Functions representing the x values in terms of t.}
@@ -19,12 +16,6 @@ parametric_equation2(x, y, a, b)
 \item{t0}{The initial value of t}
 
 \item{t1}{The final value of t}
-
-\item{a}{a number}
-
-\item{b}{another number}
-
-\item{x}{another definition of x}
 }
 \value{
 An object of \code{parametric_equation}
