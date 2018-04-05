@@ -1,6 +1,8 @@
-#' @title This is a title
-#'
 #' Construct a parametric equation object
+#'
+#' Description goes here.
+#'
+#' @title This is a title
 #'
 #' @param x Functions representing the x values in terms of t.
 #' @param y Functions representing the y values in terms of t.

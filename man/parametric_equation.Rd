@@ -2,9 +2,7 @@
 % Please edit documentation in R/parrotmetric.R
 \name{parametric_equation}
 \alias{parametric_equation}
-\title{This is a title
-
-Construct a parametric equation object}
+\title{This is a title}
 \usage{
 parametric_equation(x, y, t0, t1)
 }
@@ -19,6 +17,12 @@ parametric_equation(x, y, t0, t1)
 }
 \value{
 An object of \code{parametric_equation}
+}
+\description{
+Construct a parametric equation object
+}
+\details{
+Description goes here.
 }
 \section{Beware!}{
 
