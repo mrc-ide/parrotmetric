@@ -1,3 +1,27 @@
+#' @title This is a title
+#'
+#' Construct a parametric equation object
+#'
+#' @param x Functions representing the x values in terms of t.
+#' @param y Functions representing the y values in terms of t.
+#' @param t0 The initial value of t
+#' @param t1 The final value of t
+#'
+#' @section Beware!:
+#'
+#' Don't use this function for mission critical things.
+#'
+#' @return An object of \code{parametric_equation}
+#' @export
+#' @examples
+#' # construct a parametric equation object
+#' \dontrun{
+#' obj <- parametric_equation(sin, cos, 0, 2 * pi)
+#' obj
+#' }
+#'
+#' # See .... for ways of using it
+#' @seealso See \code{\link{median}} for something totally different
 parametric_equation <- function(x, y, t0, t1) {
   ret <- list(x = x,
               y = y,
@@ -6,6 +30,7 @@ parametric_equation <- function(x, y, t0, t1) {
   class(ret) <- "parametric_equation"
   ret
 }
+
 
 parametric_run <- function(object, ..., n = 1000) {
   theta <- seq(object$t0, object$t1, length.out = n)
