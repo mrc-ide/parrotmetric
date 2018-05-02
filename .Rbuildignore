@@ -2,3 +2,4 @@
 ^\.Rproj\.user$
 ^use\.R$
 ^\.travis\.yml$
+^create_data\.R$
